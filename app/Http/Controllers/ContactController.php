@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Contact;
 use Illuminate\Http\Request;
-
+use Inertia\Inertia;
 class ContactController extends Controller
 {
     /**
@@ -12,7 +12,9 @@ class ContactController extends Controller
      */
     public function index()
     {
-        //
+        //dd('inner list');
+        //return Inertia::render('Contact/Index');
+        return Inertia::render('Contact/Index');
     }
 
     /**
@@ -20,7 +22,7 @@ class ContactController extends Controller
      */
     public function create()
     {
-        //
+       return Inertia::render('Contact/Create');
     }
 
     /**
