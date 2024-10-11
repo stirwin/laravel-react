@@ -19,7 +19,7 @@ function Create() {
 
     const submit = (e) => {
         e.preventDefault();
-        post(route('contacts.store'));
+        post(route('contact.store'));
         
     };
 
